@@ -1,3 +1,8 @@
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+
+
 .extra{
     margin-top: 50px;
     margin-right: 4px;
