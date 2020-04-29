@@ -1,8 +1,3 @@
-.dropdown:hover>.dropdown-menu{
-    display: block;
-}
-
-
 .extra{
     margin-top: 50px;
     margin-right: 4px;
@@ -157,3 +152,5 @@ showcase h1{
     margin-top:120px;
     width:100%;
 }
+
+
