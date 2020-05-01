@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
- 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>MyOwnSchool</title>
 
   </head>
@@ -226,10 +226,29 @@
               </div>
               
             
-<div class="end">
-  <p> Copyright &Copy;2020,Delhi Public School <a href="#">For Queries Contact Here</a></p>
+<div class="end" id="bc">
+  <p> Copyright &Copy;2020,Delhi Public School </p><br>
+    <button type="button" class="btn btn-warning" id ="gh">For Queries Contact Here</button>
+    <div class="container"id ="op" >
+
+    </div>
 </div>
 </div>
-                 
-  </body>
+
+<script>
+          $(document).ready(function(){
+         $('#gh').click(function(){
+          $('#gh').hide();
+            $.get('Query.html',function(data,status){
+              $('#op').html(data);
+              
+        });
+
+     });
+
+
+  });
+</script>
+</body>              
+ 
 </html>
